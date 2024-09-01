@@ -1,0 +1,302 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "RoleBasedAuth",
+    "collectionId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+    "dateExported": "2024-09-01T13:01:05.602Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4043da1c-df94-4564-9ca5-54545af5b541",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:5000/api/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-01T12:15:34.643Z",
+            "modified": "2024-09-01T12:34:44.196Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Astro Sarkar\",\n    \"email\": \"astro@gmail.com\",\n    \"password\": \"12345\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9249e1ab-6c66-4534-ae82-7fb2d4af8189",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:5000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-09-01T12:15:34.644Z",
+            "modified": "2024-09-01T12:34:55.526Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"email\": \"astro@gmail.com\" ,\n   \"password\": \"12345\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5ec04a02-ef96-4ec2-9c5e-4b09f4825240",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "dashboard",
+            "url": "http://localhost:5000/api/auth/dashboard",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-09-01T12:15:34.646Z",
+            "modified": "2024-09-01T12:35:19.328Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmQ0MDNlZTQ2YWFkNGZkMWRmNmFmM2QiLCJuYW1lIjoiQXN0cm8gU2Fya2FyIiwiZW1haWwiOiJhc3Ryb0BnbWFpbC5jb20iLCJpc0FkbWluIjoiQURNSU4iLCJpYXQiOjE3MjUxOTQwOTUsImV4cCI6MTcyNTE5NzY5NX0.8yL-o3pBLmg3_YyDQHrl-0y_SHh33jXuJBLdjUVlPPc"
+                }
+            ]
+        },
+        {
+            "_id": "d147efcf-149f-492a-a841-e5464296973f",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "logout",
+            "url": "http://localhost:5000/api/auth/logout",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-09-01T12:15:34.647Z",
+            "modified": "2024-09-01T12:15:34.647Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmNhZDk2ZDRhMDgzZGFlMTIxYTY3ZjEiLCJuYW1lIjoiYWthc2ggc2Fya2FyIiwiZW1haWwiOiJha2FzaEBnbWFpbC5jb20iLCJpYXQiOjE3MjQ1NzAzOTIsImV4cCI6MTcyNDU3Mzk5Mn0.ZJcLaLAbAXwmJRPaCGz6aXU-tFd09ltpdRqonC1IWYY"
+                }
+            ]
+        },
+        {
+            "_id": "cd6add05-0a72-42bd-8c92-c8a5e9158d25",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "categories POST",
+            "url": "http://localhost:5000/api/categories",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-09-01T12:15:34.648Z",
+            "modified": "2024-09-01T12:36:13.325Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmQ0MDNlZTQ2YWFkNGZkMWRmNmFmM2QiLCJuYW1lIjoiQXN0cm8gU2Fya2FyIiwiZW1haWwiOiJhc3Ryb0BnbWFpbC5jb20iLCJpc0FkbWluIjoiQURNSU4iLCJpYXQiOjE3MjUxOTQwOTUsImV4cCI6MTcyNTE5NzY5NX0.8yL-o3pBLmg3_YyDQHrl-0y_SHh33jXuJBLdjUVlPPc"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"noodles\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3156236b-b97b-4db3-9aa2-9bd610b455cb",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "createproduct",
+            "url": "http://localhost:5000/api/create/product",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-09-01T12:15:34.649Z",
+            "modified": "2024-09-01T12:50:24.210Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmQ0MDNlZTQ2YWFkNGZkMWRmNmFmM2QiLCJuYW1lIjoiQXN0cm8gU2Fya2FyIiwiZW1haWwiOiJhc3Ryb0BnbWFpbC5jb20iLCJpc0FkbWluIjoiQURNSU4iLCJpYXQiOjE3MjUxOTQwOTUsImV4cCI6MTcyNTE5NzY5NX0.8yL-o3pBLmg3_YyDQHrl-0y_SHh33jXuJBLdjUVlPPc"
+                }
+            ],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "peech"
+                    },
+                    {
+                        "name": "price",
+                        "value": "700"
+                    },
+                    {
+                        "name": "description",
+                        "value": "it is a peech"
+                    },
+                    {
+                        "name": "stock",
+                        "value": "50"
+                    },
+                    {
+                        "name": "sizes",
+                        "value": "M"
+                    },
+                    {
+                        "name": "sizes",
+                        "value": "L"
+                    },
+                    {
+                        "name": "category",
+                        "value": "66d450f5ebd584b84e37248d"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "d:\\Astro\\Photos\\Wallpapers\\wallpaperflare.com_wallpaper.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "c6299e13-a490-40ce-be50-6ae0ef61397c",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "getallproduct",
+            "url": "http://localhost:5000/api/get/product",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-09-01T12:15:34.650Z",
+            "modified": "2024-09-01T12:15:34.650Z",
+            "headers": []
+        },
+        {
+            "_id": "1f39a07f-fbda-47cb-94ea-8b58fa0f4a7b",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "getproductbyid",
+            "url": "http://localhost:5000/api/get/product/66d4602d6638980a6d7beeef",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-09-01T12:15:34.651Z",
+            "modified": "2024-09-01T12:39:34.487Z",
+            "headers": []
+        },
+        {
+            "_id": "89ffed16-634d-4455-aaaa-ca6aa327cfb1",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "getproductbycategory",
+            "url": "http://localhost:5000/api/products/category/66d450f5ebd584b84e37248d",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-09-01T12:15:34.652Z",
+            "modified": "2024-09-01T12:40:09.952Z",
+            "headers": []
+        },
+        {
+            "_id": "768afa47-19aa-4ffa-8aae-51e1dfdd9263",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "editproduct",
+            "url": "http://localhost:5000/api/products/66d4602d6638980a6d7beeef",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-09-01T12:15:34.653Z",
+            "modified": "2024-09-01T12:43:11.890Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmQ0MDNlZTQ2YWFkNGZkMWRmNmFmM2QiLCJuYW1lIjoiQXN0cm8gU2Fya2FyIiwiZW1haWwiOiJhc3Ryb0BnbWFpbC5jb20iLCJpc0FkbWluIjoiQURNSU4iLCJpYXQiOjE3MjUxOTQwOTUsImV4cCI6MTcyNTE5NzY5NX0.8yL-o3pBLmg3_YyDQHrl-0y_SHh33jXuJBLdjUVlPPc"
+                }
+            ],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "grapes"
+                    },
+                    {
+                        "name": "price",
+                        "value": "400"
+                    },
+                    {
+                        "name": "description",
+                        "value": "this is grapes"
+                    },
+                    {
+                        "name": "stock",
+                        "value": "15"
+                    },
+                    {
+                        "name": "sizes",
+                        "value": "S"
+                    },
+                    {
+                        "name": "sizes",
+                        "value": "XXL"
+                    },
+                    {
+                        "name": "isActive",
+                        "value": "false",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "category",
+                        "value": "66d450f5ebd584b84e37248d"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "d:\\Astro\\Photos\\Wallpapers\\wallpaperflare.com_wallpaper (3).jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "6e630598-2ed4-4903-b5bd-202c10de7632",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "CATEGORY GET",
+            "url": "http://localhost:5000/api/categories",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-09-01T12:15:34.654Z",
+            "modified": "2024-09-01T12:43:41.575Z",
+            "headers": []
+        },
+        {
+            "_id": "af4c5170-58ff-4193-a617-e4c82f16f327",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "toggleisactive",
+            "url": "http://localhost:5000/api/products/66d46310234c261bb91f4c96/toggle-active",
+            "method": "PATCH",
+            "sortNum": 120000,
+            "created": "2024-09-01T12:15:34.655Z",
+            "modified": "2024-09-01T13:00:27.266Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmQ0MDNlZTQ2YWFkNGZkMWRmNmFmM2QiLCJuYW1lIjoiQXN0cm8gU2Fya2FyIiwiZW1haWwiOiJhc3Ryb0BnbWFpbC5jb20iLCJpc0FkbWluIjoiQURNSU4iLCJpYXQiOjE3MjUxOTQ4NzcsImV4cCI6MTcyNTE5ODQ3N30.7OGSM5Xv9nXQnojDdd2wHuZXMtq9R5aZFz85fTch3u8"
+                }
+            ]
+        },
+        {
+            "_id": "03ed3569-c9bb-41c6-968f-4eaa36e254d9",
+            "colId": "57baddfd-dc8c-4079-8cac-b3c3df584829",
+            "containerId": "",
+            "name": "deleteproduct",
+            "url": "http://localhost:5000/api/products/66d4602d6638980a6d7beeef/delete",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-09-01T12:24:59.988Z",
+            "modified": "2024-09-01T12:55:35.147Z",
+            "headers": [
+                {
+                    "name": "x-access-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmQ0MDNlZTQ2YWFkNGZkMWRmNmFmM2QiLCJuYW1lIjoiQXN0cm8gU2Fya2FyIiwiZW1haWwiOiJhc3Ryb0BnbWFpbC5jb20iLCJpc0FkbWluIjoiQURNSU4iLCJpYXQiOjE3MjUxOTQ4NzcsImV4cCI6MTcyNTE5ODQ3N30.7OGSM5Xv9nXQnojDdd2wHuZXMtq9R5aZFz85fTch3u8"
+                }
+            ]
+        }
+    ],
+    "ref": "gffdev9GC6FsWhPwFasD8nTalIxHhz93qy1fiCtzYB_Zg49vYodn7wgCRpZfTgMZrlDNHpnGxIo0QZSp_NT48Q"
+}
